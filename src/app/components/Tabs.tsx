@@ -1,0 +1,35 @@
+'use client'
+
+import { HomeIcon, FileTextIcon, ImageIcon, VideoIcon, Headphones, Code } from 'lucide-react'
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+
+const tabs = [
+  // { icon: HomeIcon, path: "/tools", match: /^\/tools\/?$/ },
+  { icon: FileTextIcon, path: "/tools/text", match: /^\/tools\/text(\/.*)?$/ },
+  { icon: ImageIcon, path: "/tools/image" },
+  { icon: VideoIcon, path: "/tools/video" },
+  { icon: Headphones, path: "/tools/audio" },
+  { icon: Code, path: "/tools/code" },
+]
+
+export default function Tabs() {
+  const pathname = usePathname()
+
+  return (
+    <div className="flex sm:flex-col sm:w-16 sm:h-full bg-muted">
+      {tabs.map((tab, index) => (
+        <Link
+          key={index}
+          href={tab.path}
+          className={`flex-1 p-4 hover:bg-accent flex items-center justify-center sm:justify-start ${
+            (tab.match ? tab.match.test(pathname) : pathname === tab.path) ? "bg-accent" : ""
+          }`}
+        >
+          <tab.icon className="w-6 h-6" />
+        </Link>
+      ))}
+    </div>
+  )
+}
+
