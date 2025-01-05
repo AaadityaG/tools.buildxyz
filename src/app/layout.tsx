@@ -1,35 +1,42 @@
-import type { Metadata } from 'next'
+import Navbar from './components/Navbar'
+import Tabs from './components/Tabs'
 import { Inter } from 'next/font/google'
-import './globals.css'
-// import { ThemeProvider } from './components/ThemeProvider'
 import { ThemeProvider } from './components/ThemeProvider'
-import { Bricolage_Grotesque } from 'next/font/google'
+import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
-// const brigo = Inter({ subsets: ['latin'] })
-const brigo = Bricolage_Grotesque({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'Tlt App',
-  description: 'A simple app with tabs and theme switching',
-}
-
-export default function RootLayout({
+export default function ToolsLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={brigo.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          
-        >
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
+      <body className={inter.className}>
+
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
+      disableTransitionOnChange
+    >
+      <div className="flex flex-col h-screen">
+        <Navbar />
+        <div className="flex flex-1 overflow-hidden">
+          <div className="hidden sm:block">
+            <Tabs />
+          </div>
+          <main className="flex-1 overflow-y-auto ">
+            {children}
+          </main>
+        </div>
+        <div className="sm:hidden">
+          <Tabs />
+        </div>
+      </div>
+    </ThemeProvider>
+    </body>
+</html>
   )
 }
 

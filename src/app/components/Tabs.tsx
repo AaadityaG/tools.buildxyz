@@ -5,12 +5,12 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 const tabs = [
-  // { icon: HomeIcon, path: "/tools", match: /^\/tools\/?$/ },
-  { icon: FileTextIcon, path: "/tools/text", match: /^\/tools\/text(\/.*)?$/ },
-  { icon: ImageIcon, path: "/tools/image" },
-  { icon: VideoIcon, path: "/tools/video" },
-  { icon: Headphones, path: "/tools/audio" },
-  { icon: Code, path: "/tools/code" },
+  // { icon: HomeIcon, path: "/", match: /^\/tools\/?$/ },
+  { icon: FileTextIcon, path: "/text", match: /^\/tools\/text(\/.*)?$/ },
+  { icon: ImageIcon, path: "/image" },
+  { icon: VideoIcon, path: "/video" },
+  { icon: Headphones, path: "/audio" },
+  { icon: Code, path: "/code" },
 ]
 
 export default function Tabs() {

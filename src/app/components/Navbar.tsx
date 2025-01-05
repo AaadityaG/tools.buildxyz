@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex justify-between items-center p-4 bg-background border-b">
-      <Link href="/tools" className="text-2xl font-bold">Tlt</Link>
+      <Link href="/" className="text-2xl font-bold">Tlt</Link>
 
 {/* <Link href={"/"}>
 <GradientText
