@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Toolit - Your One-Stop Solution for Data Processing',
     description: 'Free, secure, and well-categorized tools for text, image, video, audio, and code processing.',
-    url: 'https://your-app-url.com',
+    url: 'https://tools-buildxyz.vercel.app',
     siteName: 'Toolit',
     images: [
       {
-        url: 'https://your-app-url.com/globe.svg', // Static image
+        url: 'https://tools-buildxyz.vercel.app/Toolit.png', // Static image
         width: 1200,
         height: 630,
       },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Toolit - Your One-Stop Solution for Data Processing',
     description: 'Free, secure, and well-categorized tools for text, image, video, audio, and code processing.',
-    images: ['https://your-app-url.com/og-image.png'], // Static image
+    images: ['https://tools-buildxyz.vercel.app/Toolit.png'], // Static image
   },
 };
 
