@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'https://tools-buildxyz.vercel.app/Toolit.png', // Static image
-        width: 1200,
-        height: 630,
+        // width: 1200,
+        // height: 630,
       },
     ],
     locale: 'en_US',
