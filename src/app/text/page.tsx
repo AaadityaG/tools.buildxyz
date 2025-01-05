@@ -6,7 +6,7 @@ export default function TextPage() {
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Text Tools</h1>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <Link href="/tools/text/guideline-caption-generator" className="block">
+        <Link href="/text/guideline-caption-generator" className="block">
           <Card>
             <CardHeader>
               <CardTitle>Guideline Caption Generator</CardTitle>

@@ -12,7 +12,7 @@ export default function HomePage() {
       <div className="">
         <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Welcome to Tlt</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Welcome to Toolit.</h1>
             <p className="text-xl md:text-2xl mb-8">Free, Secure & well categorized!</p>
             <p className="text-lg md:text-xl mb-8">
             One-Stop solution for all tools you need, designed to handle various types of data.
