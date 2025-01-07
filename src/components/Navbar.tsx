@@ -5,8 +5,10 @@ import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 import Link from 'next/link'
 
-import ShinyText from '../../components/ShinyText'
-import GradientText from '../../components/GradientText'
+// import ShinyText from '../../components/ShinyText'
+import ShinyText from './ShinyText'
+// import GradientText from '../../components/GradientText'
+import GradientText from './GradientText'
 
 export default function Navbar() {
   // const { theme, setTheme } = useTheme()
