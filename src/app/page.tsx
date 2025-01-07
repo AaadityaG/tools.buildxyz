@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Bricolage_Grotesque } from 'next/font/google'
 import { FileTextIcon, ImageIcon, VideoIcon, FileAudioIcon, CodeIcon } from 'lucide-react'
-import SpotlightCard from "./components/SpotlightCard"
+import SpotlightCard from "../components/SpotlightCard"
 
 const brigo = Bricolage_Grotesque({ subsets: ['latin'] })
 

@@ -6,14 +6,14 @@ export default function AudioPage() {
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Image Tools</h1>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {/* <Link href="/tools/text/guideline-caption-generator" className="block">
+        <Link href="/image/image-convertor" className="block">
           <Card>
             <CardHeader>
-              <CardTitle>Guideline Caption Generator</CardTitle>
-              <CardDescription>Generate captions with modified words to meet guidelines</CardDescription>
+              <CardTitle>Image Convertor</CardTitle>
+              <CardDescription>Convert any type of images like png, jpg, jpeg and more</CardDescription>
             </CardHeader>
           </Card>
-        </Link> */}
+        </Link>
       </div>
     </div>
   )
