@@ -7,14 +7,14 @@ export default function CodePage() {
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Code Tools</h1>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {/* <Link href="/tools/text/guideline-caption-generator" className="block">
+        <Link href="/code/twitter-card-preview" className="block">
           <Card>
             <CardHeader>
-              <CardTitle>Guideline Caption Generator</CardTitle>
-              <CardDescription>Generate captions with modified words to meet guidelines</CardDescription>
+              <CardTitle>X/Twitter Card Preview</CardTitle>
+              <CardDescription>Checkout if your url has a preview of image, description and title before posting on twitter/X.</CardDescription>
             </CardHeader>
           </Card>
-        </Link> */}
+        </Link>
       </div>
     </div>
   )
