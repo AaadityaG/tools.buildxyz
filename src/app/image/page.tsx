@@ -1,20 +1,27 @@
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import Link from "next/link"
 
+import InfoCard from "@/components/InfoCard"
 export default function AudioPage() {
+
+  const tools = [
+    {
+      title: "Youtube Thumbnail Downloader",
+      description: "Download high-quality thumbnails from YouTube videos",
+      href: "/image/youtube-thumbnail-downloader",
+    },
+  ];
+
+
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Image Tools</h1>
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <Link href="/image/image-convertor" className="block">
-          <Card>
-            <CardHeader>
-              <CardTitle>Image Convertor</CardTitle>
-              <CardDescription>Convert any type of images like png, jpg, jpeg and more</CardDescription>
-            </CardHeader>
-          </Card>
-        </Link>
-      </div>
+      {tools.map((tool) => (
+          <InfoCard
+            key={tool.href}
+            title={tool.title}
+            description={tool.description}
+            href={tool.href}
+          />
+        ))}
     </div>
   )
 }

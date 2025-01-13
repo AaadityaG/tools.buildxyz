@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Bricolage_Grotesque } from 'next/font/google'
-import { FileTextIcon, ImageIcon, VideoIcon, FileAudioIcon, CodeIcon } from 'lucide-react'
+import { FileTextIcon, ImageIcon, VideoIcon, FileAudioIcon, CodeIcon, Type  } from 'lucide-react'
 import SpotlightCard from "../components/SpotlightCard"
 
 const brigo = Bricolage_Grotesque({ subsets: ['latin'] })
@@ -22,7 +22,7 @@ export default function HomePage() {
           <div className="flex w-full items-center justify-center lg:flex-nowrap md:flex-wrap flex-wrap gap-4 mb-12">
             <Link href={"/text"}>
             <SpotlightCard className="flex flex-col items-center justify-center p-4 bg-white bg-opacity-10 rounded-lg">
-              <FileTextIcon className="w-9 h-9 mb-2" />
+              <Type  className="w-9 h-9 mb-2" />
               <span className="text-sm md:text-base">Text</span>
             </SpotlightCard>
             </Link>
@@ -44,7 +44,7 @@ export default function HomePage() {
               <span className="text-sm md:text-base">Audio</span>
             </SpotlightCard>
             </Link>
-            <Link href="/audio">
+            <Link href="/code">
             <SpotlightCard className="flex flex-col items-center justify-center p-4 bg-white bg-opacity-10 rounded-lg">
               <CodeIcon className="w-9 h-9 mb-2" />
               <span className="text-sm md:text-base">Code</span>
@@ -58,11 +58,18 @@ export default function HomePage() {
               Streamline your workflow and enhance your productivity with our user-friendly tools.
             </p>
             
-            {/* <Link href="/text" passHref>
-              <Button size="lg" className="font-semibold bg-white text-black hover:bg-gray-100">
-                Explore Tools
-              </Button>
-            </Link> */}
+            <div className="flex gap-4 items-center justify-center">
+            <Link href="https://tally.so/r/nPvkq0" target="_blank" passHref>
+              <button  className="font-semibold bg-white text-blue-400 hover:bg-blue-200 p-2 rounded-lg">
+                Request a tool/feature
+              </button>
+            </Link>
+            <Link href="https://tally.so/r/3yjzaW" target="_blank" passHref>
+              <button  className="font-semibold bg-white text-green-400 hover:bg-green-200 p-2 rounded-lg">
+                contact
+              </button>
+            </Link>
+            </div>
           </div>
         </div>
       </div>

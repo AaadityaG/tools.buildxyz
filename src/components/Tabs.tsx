@@ -1,12 +1,12 @@
 'use client'
 
-import { HomeIcon, FileTextIcon, ImageIcon, VideoIcon, Headphones, Code } from 'lucide-react'
+import { HomeIcon, Type, ImageIcon, VideoIcon, Headphones, Code } from 'lucide-react'
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 const tabs = [
   // { icon: HomeIcon, path: "/", match: /^\/tools\/?$/ },
-  { icon: FileTextIcon, path: "/text", match: /^\/tools\/text(\/.*)?$/ },
+  { icon: Type , path: "/text", match: /^\/tools\/text(\/.*)?$/ },
   { icon: ImageIcon, path: "/image" },
   { icon: VideoIcon, path: "/video" },
   { icon: Headphones, path: "/audio" },

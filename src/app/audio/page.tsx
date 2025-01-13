@@ -1,20 +1,27 @@
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import Link from "next/link"
+import InfoCard from "@/components/InfoCard";
 
-export default function AudioPage() {
+export default function CodePage() {
+
+  const tools = [
+    {
+      title: "X/Twitter Card Preview",
+      description: "Checkout if your url has a preview of image, description and title before posting on twitter/X.",
+      href: "/code/twitter-card-preview",
+    },
+  ];
+
+  
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Audio Tools</h1>
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {/* <Link href="/tools/text/guideline-caption-generator" className="block">
-          <Card>
-            <CardHeader>
-              <CardTitle>Guideline Caption Generator</CardTitle>
-              <CardDescription>Generate captions with modified words to meet guidelines</CardDescription>
-            </CardHeader>
-          </Card>
-        </Link> */}
-      </div>
+      {/* {tools.map((tool) => (
+          <InfoCard
+            key={tool.href}
+            title={tool.title}
+            description={tool.description}
+            href={tool.href}
+          />
+        ))} */}
     </div>
   )
 }
