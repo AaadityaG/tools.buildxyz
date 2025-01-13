@@ -41,7 +41,7 @@ interface URLInputProps {
   onURLSubmit: (url: string) => void;
 }
 
-export const URLInput = ({ onURLSubmit }: URLInputProps) => {
+const URLInput = ({ onURLSubmit }: URLInputProps) => {
   const [inputValue, setInputValue] = useState("");
   const { toast } = useToast();
 
@@ -89,7 +89,7 @@ interface MetaData {
   image: string;
 }
 
-export const TwitterPreview = ({ url }: TwitterPreviewProps) => {
+const TwitterPreview = ({ url }: TwitterPreviewProps) => {
   const [loading, setLoading] = useState(false);
   const [metadata, setMetadata] = useState<MetaData>({
     title: "Website Title",
